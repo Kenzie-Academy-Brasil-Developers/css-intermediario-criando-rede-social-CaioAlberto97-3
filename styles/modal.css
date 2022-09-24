@@ -27,11 +27,12 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 32px;
+    gap: 2rem;
     
     background-color: var(--color-white-fixed);
-    width: 761px;
-    min-height: 460px;
+    width: 47.563rem;
+    max-width: 95%;
+    min-height: 28.75rem;
     padding: 40px 24px;
     border-radius: 8px;
 
@@ -66,6 +67,7 @@
 .modal-card .user-modal {
     margin-top: 0px;
 }
+
 
 /* .modal-card .p-post {
     font-size: var(--font-text-1);

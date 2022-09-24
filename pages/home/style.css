@@ -112,3 +112,63 @@ aside h2 {
     position: absolute;
     right: 0; 
 }
+
+@media(max-width: 500px){
+    body {
+        margin-top: 5.5rem;
+    }
+
+    .navbar {
+        padding: 1.875rem 1rem;
+        margin-bottom: 0px;
+    }
+    main {
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .section-left {
+        width: 100%;
+    }
+
+    .section-left .user {
+        margin-top: 2rem;
+    }
+
+    .posts h1 {
+        /* margin-top: 21rem; */
+    }
+
+    .post-content {
+        margin: 2rem 0;
+    }
+    .post-content .p-post {
+        height: max-content;
+    }
+
+    aside {
+        width: 100%;
+        /* position: relative; */
+        /* top: -92.5rem; */
+    }
+
+    aside h2 {
+        margin-bottom: 0;
+    }
+
+    aside .user {
+        margin: 2rem 0px;
+    }
+
+    .modal-card {
+        margin-top: 5rem;
+        width: 95%;
+        max-height: 90%;
+        padding: 40px 24px;
+    }
+
+    .modal-card h2{
+        font-size: var(--font-title-2);
+    }
+}
