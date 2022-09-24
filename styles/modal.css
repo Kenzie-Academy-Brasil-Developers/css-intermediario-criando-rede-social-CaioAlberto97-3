@@ -10,6 +10,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     transition: 1s ease;
 }
 
 .hide-modal {
@@ -36,7 +37,7 @@
 
     position: relative;
     /* margin-top: -10000px; */
-    animation: animateModal 1s;
+    transition: 1s ease; /* não funciona */
 }
 
 .modal-card .close{

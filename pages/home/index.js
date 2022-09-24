@@ -142,7 +142,6 @@ function seguir(){
 const sectionModal = document.querySelector('.section-modal')
 
 function abrirPost(){
-    // let post = event.path[2].children
     let id = event.path[2].children[3].children[1].id
 
     for (let i = 0; i < posts.length; i++){
@@ -156,6 +155,7 @@ function abrirPost(){
             let divX = document.createElement('div')
             divX.classList.add('close')
             divX.innerText = 'X'
+            divX.addEventListener('click', closeModal)
 
             let divUser= document.createElement('div')
             divUser.classList.add('user', 'user-modal')
@@ -172,46 +172,23 @@ function abrirPost(){
             let h2 = document.createElement('h2')
             h2.innerText = `${posts[i].title}`
             let pPost = document.createElement('p')
+            pPost.classList.add('p-post')
             pPost.innerText = `${posts[i].text}`
 
 
-            divWrapper.append(divModalCard, h2, pPost)
-            divModalCard.append(divX, divUser)
+            divWrapper.append(divModalCard)
+            divModalCard.append(divX, divUser, h2, pPost)
             divUser.append(img, div)
             div.append(p, small)
             sectionModal.append(divWrapper)
             console.log(divWrapper)
-
-
-
-
         }
     }
 }
 
-
-
-
-
-
-
-
-
-
-/* <div class="modal-wrapper hide-modal" id="modal-senha">
-<div class="modal-card hide-modal">
-  <div class="close">X</div>
-  <div class="user user-modal">
-    <img src="../../assets/img/user2.svg" alt="" srcset="">
-      <div>
-        <p>Samuel Persuhn</p>
-        <small>Front-end Engineer</small>
-      </div>
-  </div>
-    <h2>título post</h2>
-    <p class="p-post">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vel quod corporis. Quasi iste voluptates deserunt placeat unde perferendis provident at qui officia? Consequuntur reprehenderit officiis veniam facilis numquam quo!
-    </p>
-        </div>
-</div>
-</div> */
+function closeModal(){
+    let modal = document.querySelector('.modal-wrapper')
+    modal.innerHTML = ''
+    modal.classList = 'hide-modal'
+    console.log(modal)
+}
