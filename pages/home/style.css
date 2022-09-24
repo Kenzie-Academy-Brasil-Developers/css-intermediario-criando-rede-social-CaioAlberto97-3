@@ -8,16 +8,17 @@ main {
 .section-left {
     /* background-color: red; */
     width: 70%;
+    max-width: 100%;
 }
 
 aside {
     /* background-color: blue; */
     width: 30%;
+    max-width: 100%;
 
     position: sticky;
     top: 9.375rem;
     height: max-content;
-
 }
 
 .post-content {
@@ -51,10 +52,6 @@ form {
 
 form button {
     width: fit-content;
-}
-
-.div-button {
-    text-align: right;
 }
 
 .posts h1, .posts h2 {
@@ -111,7 +108,7 @@ aside h2 {
     margin-bottom: 3.75rem;
 }
 
-aside .button-outlined {
-    /* margin-left: 90px; */
-    right: -30px;
+.div-button {
+    position: absolute;
+    right: 0; 
 }

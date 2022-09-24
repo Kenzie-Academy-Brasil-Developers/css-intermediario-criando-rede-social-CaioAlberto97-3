@@ -33,7 +33,7 @@ function exibirPosts(array){
         let button = document.createElement('button')
         button.classList.add('button-grey')
         button.innerText = 'Abrir Post'
-        button.addEventListener('click', abrirPost)
+        button.addEventListener('click', abrirModal)
         
         let imgLike = document.createElement('img')
         imgLike.src = '../../assets/img/Vector.png'
@@ -111,14 +111,18 @@ function exibirSugestoes(){
         let small = document.createElement('small')
         small.innerText = `${users[sugestUsers[i] - 1].stack}`
 
+        let divButton = document.createElement('div')
+        divButton.classList.add('div-button')
         let button = document.createElement('button')
         button.classList.add('button-outlined')
         button.innerText = 'Seguir'
         button.addEventListener('click', seguir)
 
         aside.append(divUser)
-        divUser.append(img, div, button)
+        divButton.append(button)
+        divUser.append(img, div, divButton)
         div.append(p, small)
+        console.log(divButton)
     }
 }
 exibirSugestoes()
@@ -141,7 +145,7 @@ function seguir(){
 
 const sectionModal = document.querySelector('.section-modal')
 
-function abrirPost(){
+function abrirModal(){
     let id = event.path[2].children[3].children[1].id
 
     for (let i = 0; i < posts.length; i++){
@@ -155,7 +159,7 @@ function abrirPost(){
             let divX = document.createElement('div')
             divX.classList.add('close')
             divX.innerText = 'X'
-            divX.addEventListener('click', closeModal)
+            divX.addEventListener('click', fecharModal)
 
             let divUser= document.createElement('div')
             divUser.classList.add('user', 'user-modal')
@@ -181,14 +185,12 @@ function abrirPost(){
             divUser.append(img, div)
             div.append(p, small)
             sectionModal.append(divWrapper)
-            console.log(divWrapper)
         }
     }
 }
 
-function closeModal(){
+function fecharModal(){
     let modal = document.querySelector('.modal-wrapper')
     modal.innerHTML = ''
     modal.classList = 'hide-modal'
-    console.log(modal)
 }
