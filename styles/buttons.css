@@ -1,0 +1,76 @@
+button {
+    padding: 0 12px;
+    height: 38px;
+    border: 2px solid transparent;
+    border-radius: var(--radius-1);
+
+
+    font-size: var(--text-2);
+    font-weight: var(--font-weight-2);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button-brand {
+    background-color: var(--color-brand-1);
+    border: 2px solid var(--color-brand-1);
+    color: var(--color-white-fixed);
+}
+
+.button-brand:hover {
+    background-color: var(--color-brand-2);
+    border: 2px solid var(--color-brand-2);
+}
+
+.button-brand:focus {
+    background-color: var(--color-grey-5);
+    border: 2px solid var(--color-grey-5);
+    color: var(--color-grey-3);
+}
+
+.button-grey {
+    background-color: var(--color-grey-1);
+    border: 2px solid var(--color-grey-1);
+    color: var(--color-white-fixed);
+}
+
+.button-grey:hover {
+    background-color: var(--color-grey-0);
+    border: 2px solid var(--color-grey-0);
+}
+
+.button-white {
+    background-color: var(--color-white-fixed);
+    border: 2px solid var(--color-white-fixed);
+    color: var(--color-grey-1);
+}
+
+.button-white:hover {
+    background-color: var(--color-grey-5);
+}
+
+.button-outlined {
+    background-color: var(--color-white-fixed);
+    border: 1px solid var(--color-grey-1);
+    color: var(--color-grey-1);
+}
+
+.button-outlined:hover{
+    background-color: var(--color-brand-2);
+    border: 1px solid var(--color-brand-1);
+    color: var(--color-brand-3);
+}
+
+.button-outlined-seguindo{
+    background-color: var(--color-brand-1);
+    border: 1px solid var(--color-brand-1);
+    color: var(--color-white-fixed);
+}
+
+.button-disabled {
+    background-color: var(--color-grey-4);
+    color: var(--color-grey-3);
+    border: 2px solid var(--color-grey-4);
+}

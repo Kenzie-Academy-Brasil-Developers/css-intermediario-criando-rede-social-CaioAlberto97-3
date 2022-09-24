@@ -4,13 +4,114 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/globalStyles.css"/>
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/text.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
+    <link rel="stylesheet" href="/styles/inputs.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="navbar navbar-items">
+      <h2>TechPosters</h2>
+      <small class="navbar-link">Sair</small>
+    </header>
+
+    <main>
+      <section class="section-left">
+        <div class="user">
+        <img src="../../assets/img/user1.svg" alt="" srcset="">
+          <div>
+            <p>Samuel Leão</p>
+            <small>Front-end Engineer</small>
+          </div>
+        </div>
+
+        <form action="">
+          <input type="text" name="post-title" id="post-title" placeholder="Digitar título do post" required>
+          <textarea name="txtArea" id="txtArea" rows="10" cols="70" placeholder="Digitar conteúdo do post" required></textarea>
+          <button type="submit" class="button-brand">Postar</button>
+        </form>
+
+        <div class="posts">
+          <h1>Posts</h1>
+          <div class="post-content">
+            <!-- <div class="user">
+              <img src="../../assets/img/user2.svg" alt="" srcset="">
+                <div>
+                  <p>Samuel Persuhn</p>
+                  <small>Front-end Engineer</small>
+                </div>
+            </div>
+                    <h2>Empresa de Tecnologia da Informação abre vagas para programa de estágio</h2>
+                    <p class="p-post">
+            A Generic Digital, empresa natalence especializada em Tecnologia da Informação, irá iniciar o seu sexto programa de estágio, com o prazo de inscrições entre os dias 10 e 28 de agosto. 
+                    </p>
+                    <div class="post-bottom">
+                      <button class="button-grey">Abrir Post</button>
+                      <img src="../../assets/img/Vector.png" alt="" srcset="">
+                      <small>25</small>
+                    </div> -->
+          </div>
+
+      </section>
+
+      <aside>
+        <h2>Sugestões para você seguir</h2>
+
+        <!-- <div class="user">
+          <img src="../../assets/img/user3.svg" alt="" srcset="">
+            <div>
+              <p>Samuel Persuhn</p>
+              <small>UX e UI Designer</small>
+            </div>
+            <button class="button-outlined">Seguir</button>
+        </div>
+
+        <div class="user">
+          <img src="../../assets/img/user6.svg" alt="" srcset="">
+            <div>
+              <p>Larissa Camargo</p>
+              <small>UI Developer</small>
+            </div>
+            <button class="button-outlined">Seguir</button>
+        </div>
+
+        <div class="user">
+          <img src="../../assets/img/user7.svg" alt="" srcset="">
+            <div>
+              <p>Filipe Gutierry</p>
+              <small>Full Stack Developer</small>
+            </div>
+            <button class="button-outlined">Seguir</button>
+        </div> -->
+
+      </aside>
+
+
+      <section class="section-modal"></section>
+      <!-- <div class="modal-wrapper hide-modal" id="modal-senha">
+        <div class="modal-card hide-modal">
+          <div class="close">X</div>
+          <div class="user user-modal">
+            <img src="../../assets/img/user2.svg" alt="" srcset="">
+              <div>
+                <p>Samuel Persuhn</p>
+                <small>Front-end Engineer</small>
+              </div>
+          </div>
+            <h2>título post</h2>
+            <p class="p-post">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vel quod corporis. Quasi iste voluptates deserunt placeat unde perferendis provident at qui officia? Consequuntur reprehenderit officiis veniam facilis numquam quo!
+            </p>
+                </div>
+        </div>
+    </div> -->
+
+
+    </main>
   </body>
   <script src="/script/database/users.js"></script>
   <script src="/script/database/posts.js"></script>

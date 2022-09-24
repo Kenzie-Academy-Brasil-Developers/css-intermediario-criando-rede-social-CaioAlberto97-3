@@ -1,0 +1,76 @@
+.modal-wrapper {
+    position: fixed;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background-color: rgba(0, 0, 0, 0.5);
+     
+     /* display: none; */
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+.hide-modal {
+    margin-top: -10000px;
+    display: none;
+}
+
+.show-modal {
+    margin-top: 0px;
+    display: flex;
+}
+
+.modal-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 32px;
+    
+    background-color: var(--color-white-fixed);
+    width: 761px;
+    min-height: 460px;
+    padding: 40px 24px;
+    border-radius: 8px;
+
+    position: relative;
+    /* margin-top: -10000px; */
+    animation: animateModal 1s;
+}
+
+.modal-card .close{
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+    font-size: var(--font-title-2);
+    font-family: 'Nunito', sans-serif;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+
+    position: absolute;
+    right: 15px;
+    top: 11px;
+}
+
+.modal-card .close:hover {
+    cursor: pointer;
+}
+
+.modal-card .user-modal {
+    margin-top: 0px;
+}
+
+/* .modal-card .p-post {
+    font-size: var(--font-text-1);
+    line-height: var(--line-height-text-1);
+    color: var(--color-grey-2);
+    font-weight: var(--font-weight-3);    
+} */
+
+/* --line-height-text-1: 28px; */

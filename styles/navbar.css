@@ -1,6 +1,6 @@
 .navbar{
     background-color: var(--color-grey-1);
-    padding: 1.75rem 0;
+    padding: 1.875rem 6.25rem;
 }
 
 .navbar-items{
@@ -27,4 +27,18 @@
 
 .navbar-link:hover, .navbar-link.actived{
     background-color: var(--color-grey-2);
+}
+
+.navbar h2 {
+    font-size: var(--font-title-1);
+    color: var(--color-white-fixed);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 200;
 }
