@@ -95,6 +95,8 @@ function adcPost(e){
 }
 
 const aside = document.querySelector('aside')
+const divFlex = document.querySelector('aside .flex')
+console.log(divFlex)
 
 function exibirSugestoes(){
     for (let i=0; i < sugestUsers.length; i++){
@@ -118,11 +120,10 @@ function exibirSugestoes(){
         button.innerText = 'Seguir'
         button.addEventListener('click', seguir)
 
-        aside.append(divUser)
+        divFlex.append(divUser)
         divButton.append(button)
         divUser.append(img, div, divButton)
         div.append(p, small)
-        console.log(divButton)
     }
 }
 exibirSugestoes()
@@ -154,7 +155,7 @@ function abrirModal(){
             divWrapper.classList.add('modal-wrapper', 'show-modal')
             
             let divModalCard = document.createElement('div')
-            divModalCard.classList.add('modal-card', 'show-modal')
+            divModalCard.classList.add('modal-card', 'show-modal', 'show')
 
             let divX = document.createElement('div')
             divX.classList.add('close')
@@ -189,8 +190,24 @@ function abrirModal(){
     }
 }
 
+// function fecharModal(){
+//     let modal = document.querySelector('.modal-wrapper')
+//     modal.innerHTML = ''
+//     modal.classList = 'hide-modal'
+// }
+
 function fecharModal(){
+    let modalCard = document.querySelector('.modal-card')
+    modalCard.classList.remove('show', 'show-modal')
+    modalCard.classList.add('hide')
+
     let modal = document.querySelector('.modal-wrapper')
-    modal.innerHTML = ''
-    modal.classList = 'hide-modal'
+        modal.classList.add('hide-wrapper')
+
+        setTimeout(function(){
+            modal.innerHTML="", 100;
+            setTimeout(modal.classList = 'hide-modal', 200)
+        }, 1000)
+    
+
 }

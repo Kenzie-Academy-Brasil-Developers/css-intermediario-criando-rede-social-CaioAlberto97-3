@@ -7,6 +7,7 @@ button {
 
     font-size: var(--text-2);
     font-weight: var(--font-weight-2);
+    transition: 0.3s ease;
 }
 
 button:hover {

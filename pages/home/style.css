@@ -1,24 +1,27 @@
 main {
     padding: 1.875rem 6.25rem 0;
     display: flex;
-    gap: 6.25rem;
-    justify-content: center;
+    /* gap: 6.25rem; */
+    justify-content: space-between;
 }
 
 .section-left {
     /* background-color: red; */
-    width: 70%;
+    width: 65%;
     max-width: 100%;
 }
 
 aside {
     /* background-color: blue; */
-    width: 30%;
+    min-width: 25%;
     max-width: 100%;
+    margin-left: 5%;
 
     position: sticky;
     top: 9.375rem;
-    height: max-content;
+    left: 10000px;
+    
+    height: fit-content;
 }
 
 .post-content {
@@ -28,7 +31,7 @@ aside {
 .user {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 0.75rem;
     margin-top: 3.375rem;
 }
 
@@ -93,8 +96,8 @@ form button {
 .post-bottom img {
     width: 1.423rem;
     height: 1.25rem;
-    margin-left: 32px;
-    margin-right: 7px;
+    margin-left: 2rem;
+    margin-right: 0.4375rem;
 }
 
 .post-bottom img:hover{
@@ -113,62 +116,7 @@ aside h2 {
     right: 0; 
 }
 
-@media(max-width: 500px){
-    body {
-        margin-top: 5.5rem;
-    }
-
-    .navbar {
-        padding: 1.875rem 1rem;
-        margin-bottom: 0px;
-    }
-    main {
-        flex-direction: column;
-        padding: 0 1rem;
-        gap: 1.5rem;
-    }
-
-    .section-left {
-        width: 100%;
-    }
-
-    .section-left .user {
-        margin-top: 2rem;
-    }
-
-    .posts h1 {
-        /* margin-top: 21rem; */
-    }
-
-    .post-content {
-        margin: 2rem 0;
-    }
-    .post-content .p-post {
-        height: max-content;
-    }
-
-    aside {
-        width: 100%;
-        /* position: relative; */
-        /* top: -92.5rem; */
-    }
-
-    aside h2 {
-        margin-bottom: 0;
-    }
-
-    aside .user {
-        margin: 2rem 0px;
-    }
-
-    .modal-card {
-        margin-top: 5rem;
-        width: 95%;
-        max-height: 90%;
-        padding: 40px 24px;
-    }
-
-    .modal-card h2{
-        font-size: var(--font-title-2);
-    }
+.div-button button {
+    margin-left: 40%;
 }
+

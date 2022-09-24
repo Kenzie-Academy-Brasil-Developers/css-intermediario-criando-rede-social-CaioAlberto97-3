@@ -1,0 +1,93 @@
+@media(max-width: 900px){
+    body {
+        margin-top: 5.5rem;
+    }
+
+    .navbar {
+        padding: 1.875rem 1rem;
+        margin-bottom: 0px;
+    }
+    main {
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 1.5rem;
+    }
+
+    .section-left {
+        width: 100%;
+    }
+
+    .section-left .user {
+        margin-top: 2rem;
+    }
+
+    .posts h1 {
+        margin-top: 1.25rem;
+        /* margin-top: 21rem; */
+    }
+
+    .post-content {
+        margin: 2rem 0;
+    }
+    .post-content .p-post {
+        height: max-content;
+    }
+
+    aside {
+        width: 100%;
+        margin-left: 0;
+        /* position: relative;
+        left: -30px;
+        top: -1700px; */
+    }
+
+    aside h2 {
+        margin-bottom: 0;
+    }
+
+    aside .flex {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        /* background-color: rgb(222, 212, 231); */
+        height: 135px;
+        align-items: flex-start;
+    }
+
+    aside .user {
+        margin: 2rem 0px;
+        /* background-color: antiquewhite; */
+        margin-right: 50px;
+        
+        height: 100px;
+        /* overflow-x: visible; */
+        flex-shrink: 0;
+        position: relative;
+        
+        align-items: flex-start;
+
+    }
+
+    .div-button {
+        position: static;
+    }
+    
+    .div-button button {
+        margin-left: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+    }
+    
+    .modal-card {
+        margin-top: 5rem;
+        width: 95%;
+        max-height: 90%;
+        padding: 40px 24px;
+    }
+
+    .modal-card h2{
+        font-size: var(--font-title-2);
+    }
+}

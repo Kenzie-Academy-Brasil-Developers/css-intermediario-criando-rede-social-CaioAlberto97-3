@@ -38,7 +38,6 @@
 
     position: relative;
     /* margin-top: -10000px; */
-    transition: 1s ease; /* não funciona */
 }
 
 .modal-card .close{
@@ -68,12 +67,35 @@
     margin-top: 0px;
 }
 
+.show {
+    animation: 1s show;
+}
 
-/* .modal-card .p-post {
-    font-size: var(--font-text-1);
-    line-height: var(--line-height-text-1);
-    color: var(--color-grey-2);
-    font-weight: var(--font-weight-3);    
-} */
+@keyframes show {
 
-/* --line-height-text-1: 28px; */
+    0% {
+    transform: translateY(-100%);
+    }
+    
+    100%{
+    transform: translateY(0);
+    }
+}
+
+@keyframes hide {
+    0%{
+        transform: translateY(0);
+        }
+    100% {
+    transform: translateY(-200%);
+    }
+
+}
+
+.hide {
+    animation: 1s hide;
+}
+
+.hide-wrapper {
+    background-color: rgba(0, 0, 0, 0.0);;
+}
