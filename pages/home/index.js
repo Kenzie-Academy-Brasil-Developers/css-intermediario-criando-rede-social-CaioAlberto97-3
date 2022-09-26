@@ -57,11 +57,13 @@ function like(){
     let img = div.children[3].children[1]
     let small = event.path[1].children[2]
 
-    if (img.src == 'http://127.0.0.1:5500/assets/img/Vector.png'){
-        img.src = '../../assets/img/Vector (1).png'
+    console.log(img.src)
+
+    if (img.src == 'https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector.png'){
+        img.src = '	https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector2.png'
         small.innerText ++
     } else {
-        img.src = '../../assets/img/Vector.png'
+        img.src = '	https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector.png'
         small.innerText --
     }
 
