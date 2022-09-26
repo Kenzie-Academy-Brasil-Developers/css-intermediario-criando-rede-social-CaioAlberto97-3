@@ -59,11 +59,11 @@ function like(){
 
     console.log(img.src)
 
-    if (img.src == 'https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector.png'){
-        img.src = '	https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector2.png'
+    if (img.src == '	https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector.png'){
+        img.src = 'https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector2.png'
         small.innerText ++
     } else {
-        img.src = '	https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector.png'
+        img.src = 'https://crispy-potato-e6f95f09.pages.github.io/assets/img/Vector.png'
         small.innerText --
     }
 

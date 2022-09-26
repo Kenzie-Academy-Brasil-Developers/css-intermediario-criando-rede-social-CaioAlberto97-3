@@ -54,6 +54,10 @@
         align-items: flex-start;
     }
 
+    aside .flex::-webkit-scrollbar {
+        display: none;
+    }
+      
     aside .user {
         margin: 2rem 0px;
         /* background-color: antiquewhite; */
